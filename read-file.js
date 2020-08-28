@@ -8,7 +8,6 @@ fs.readdir(DIR_URL, 'utf-8', (err, files) => {
     }
     for (furl of files) {
         let fileUrl = DIR_URL + furl;
-        console.log(fileUrl);
         fs.readFile(fileUrl, 'utf-8', (err, data) => {
             if (data != undefined) {
                 console.log(data);
